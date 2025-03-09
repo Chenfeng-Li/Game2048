@@ -205,7 +205,7 @@ class Game2048:
                 message+="\nIf want to reverse to previous step, type r. "
             direction = input(message)
             
-            if direction not in 'wasdrq' or direction=="":
+            if len(direction)!=1 or direction not in 'wasdrq':
                 print("Invalid move.")
                 continue
             
